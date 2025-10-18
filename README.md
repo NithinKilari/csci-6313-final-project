@@ -6,7 +6,7 @@ This project is a multi-page personal portfolio for a Data Analyst, created to f
 
 ## Live Demo
 
-**[https://[your-live-url-goes-here]/](https://[your-live-url-goes-here]/)**
+https://nithinkilari.github.io/csci-6313-final-project/
 
 ---
 
