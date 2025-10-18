@@ -44,6 +44,7 @@ This project meets all five requirements of the final exam.
 ## Documentation (Screenshots)
 
 ### Part 01: Home page (desktop + mobile)
+![Screenshot_18-10-2025_65122_](https://github.com/user-attachments/assets/4e7ee689-bca6-4b1e-8762-1d2c7c706563)
 
 
 ### Part 02: Form invalid + valid states
@@ -56,7 +57,8 @@ This project meets all five requirements of the final exam.
 
 
 ### Part 04: Lighthouse/WAVE report
-*...*
+<img width="811" height="845" alt="image" src="https://github.com/user-attachments/assets/cf21e1be-6600-463b-b3a5-d61d0294369e" />
+
 
 ### Part 05: Deployed site (URL bar visible)
 *...*
