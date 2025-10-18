@@ -61,4 +61,6 @@ This project meets all five requirements of the final exam.
 
 
 ### Part 05: Deployed site (URL bar visible)
-*...*
+<img width="1919" height="943" alt="image" src="https://github.com/user-attachments/assets/e45a1a5b-5156-4f37-b7fb-0688217cf2b8" />
+<img width="1662" height="980" alt="image" src="https://github.com/user-attachments/assets/b870f9fd-786c-4a31-bfcc-36fc90ac278d" />
+
