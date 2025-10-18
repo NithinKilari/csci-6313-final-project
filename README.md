@@ -1,0 +1,61 @@
+# CSCI 6313 - Final Exam Project | Data Analyst Portfolio
+
+This project is a multi-page personal portfolio for a Data Analyst, created to fulfill all requirements for the CSCI 6313 final examination.
+
+**Author:** Nithin Kilari
+
+## Live Demo
+
+**[https://[your-live-url-goes-here]/](https://[your-live-url-goes-here]/)**
+
+---
+
+## Project Features
+
+This project meets all five requirements of the final exam.
+
+### Part 01: Semantic HTML & External CSS
+* The site is built with a clean, semantic HTML5 structure, including `<header>`, `<nav>`, `<main>`, `<section>`, and `<footer>` tags.
+* All styling is handled by a single external `style.css` file, which uses CSS variables for an easy-to-manage, professional light-mode theme.
+
+### Part 02: Form with Client-Side Validation
+* A "Client Settings" page (`form.html`) provides a logical context for the required form.
+* **Password Validation:** The "New Password" field uses a precise regex pattern to enforce the "min 9 chars, 2 uppercase, 1 special symbol" rule.
+* **JS Logic:** The form uses JavaScript to prevent submission on invalid fields, check for matching passwords, and show dynamic success/error messages.
+* **UX Improvement:** Includes a "show/hide" password toggle (eye icon) for usability.
+
+### Part 03: Google Map with Top 5 Places
+* A "Location Explorer" page (`map.html`) integrates the Google Maps JS API and the Places Library.
+* A search bar allows users to perform a `textSearch` for any location.
+* The top 5 results are fetched and displayed in a responsive grid of cards.
+* **Advanced Features:** Cards include ratings (with stars), total number of reviews, and open/closed status.
+* **Interactivity:** Clicking a card pans the map and triggers the corresponding marker's info window.
+
+### Part 04: SEO & WCAG (Accessibility)
+* **SEO:** The main page (`index.html`) includes a meaningful `<title>`, `<meta name="description">`, and a proper `<h1>` / `<h2>` heading structure.
+* **WCAG:** The site is fully keyboard-accessible, uses `alt` text for all images, and the color theme meets WCAG 4.5:1 contrast ratios.
+
+### Part 05: GitHub Hosting
+* All project source code (HTML, CSS, JS) is hosted in this repository.
+* The site is deployed and publicly accessible via GitHub Pages.
+
+---
+
+## Documentation (Screenshots)
+
+*(This section is for you to add your screenshots as required by the assignment.)*
+
+### Part 01: Home page (desktop + mobile)
+*...*
+
+### Part 02: Form invalid + valid states
+*...*
+
+### Part 03: Map with 5 results + cards
+*...*
+
+### Part 04: Lighthouse/WAVE report
+*...*
+
+### Part 05: Deployed site (URL bar visible)
+*...*
