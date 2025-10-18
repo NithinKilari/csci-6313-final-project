@@ -43,13 +43,12 @@ This project meets all five requirements of the final exam.
 
 ## Documentation (Screenshots)
 
-*(This section is for you to add your screenshots as required by the assignment.)*
-
 ### Part 01: Home page (desktop + mobile)
-*...*
+
 
 ### Part 02: Form invalid + valid states
-*...*
+<img width="1278" height="933" alt="Screenshot 2025-10-18 064421" src="https://github.com/user-attachments/assets/e698f3e5-7c83-47ab-8d88-317843a9c3de" />
+
 
 ### Part 03: Map with 5 results + cards
 *...*
