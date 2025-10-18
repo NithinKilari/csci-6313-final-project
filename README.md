@@ -48,10 +48,12 @@ This project meets all five requirements of the final exam.
 
 ### Part 02: Form invalid + valid states
 <img width="1278" height="933" alt="Screenshot 2025-10-18 064421" src="https://github.com/user-attachments/assets/e698f3e5-7c83-47ab-8d88-317843a9c3de" />
+<img width="1380" height="923" alt="Screenshot 2025-10-18 064448" src="https://github.com/user-attachments/assets/9c6f5198-93df-4de2-9985-37e0fcbc3467" />
 
 
 ### Part 03: Map with 5 results + cards
-*...*
+![Screenshot_18-10-2025_6509_](https://github.com/user-attachments/assets/26592605-abbc-405c-8df6-88c784de3471)
+
 
 ### Part 04: Lighthouse/WAVE report
 *...*
