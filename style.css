@@ -1,0 +1,474 @@
+/* =======================================
+  1. Theme & Variables (Light Theme)
+   ======================================= */
+:root {
+  --color-background: #ffffff;      /* Pure white background */
+  --color-text: #333333;          /* Dark, readable gray for text */
+  --color-primary: #0056b3;     /* A professional, deep blue for links */
+  --color-card: #f9f9f9;           /* A very light gray for cards/backgrounds */
+  --color-border: #eeeeee;        /* A subtle border color */
+  --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* =======================================
+  2. Global Resets & Styles
+   ======================================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem; /* 1.5rem of space on left/right */
+}
+
+h1, h2, h3 {
+  color: #000; /* Bolder text for titles in light mode */
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* =======================================
+  3. Header & Navigation
+   ======================================= */
+.site-header {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-background); /* White header */
+  position: sticky; /* Makes it stick to the top */
+  top: 0;
+  z-index: 10;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* =======================================
+  4. Page Content (Hero & Projects)
+   ======================================= */
+.hero {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.hero-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Makes it a circle */
+  object-fit: cover;  /* Prevents image from stretching */
+  border: 4px solid var(--color-border);
+  margin-bottom: 1.5rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+.hero p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
+.projects {
+  padding: 2rem 0;
+}
+
+.projects h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Project Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Card Style */
+.card {
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  overflow: hidden; /* Ensures image corners are rounded */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.card h3 {
+  padding: 1rem 1rem 0.5rem 1rem;
+}
+.card p {
+  padding: 0 1rem 1rem 1rem;
+  font-size: 0.9rem;
+}
+
+
+/* =======================================
+  5. Footer
+   ======================================= */
+.site-footer {
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 3rem;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* =======================================
+  6. Hero Contact Links
+   ======================================= */
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap; /* Allows buttons to wrap on small screens */
+}
+
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem; /* Space between icon and text */
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.contact-button:hover {
+  background-color: #004080; /* A darker blue on hover */
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Make the LinkedIn/Phone button a bit more subtle */
+.contact-button:nth-child(2),
+.contact-button:nth-child(3) {
+  background-color: var(--color-card);
+  color: var(--color-primary);
+  border: 1px solid var(--color-border);
+}
+.contact-button:nth-child(2):hover,
+.contact-button:nth-child(3):hover {
+  background-color: var(--color-border);
+}
+
+/* =======================================
+  7. Form Page Styles
+   ======================================= */
+.form-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.form-container p {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #555;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input[type="password"],
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: var(--font-main);
+}
+.form-group textarea {
+  resize: vertical; /* Allow user to resize height only */
+}
+
+.form-group small {
+  font-size: 0.8rem;
+  color: #777;
+  margin-top: 0.25rem;
+}
+
+button[type="submit"],
+button[type="button"] {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"] {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+button[type="submit"]:hover {
+  background-color: #004080;
+}
+
+/* Style for the "Change Address" button */
+button[type="button"] {
+  background-color: #555;
+  color: #fff;
+}
+button[type="button"]:hover {
+  background-color: #333;
+}
+
+.form-divider {
+  margin: 2rem 0;
+  border: 0;
+  border-top: 1px solid var(--color-border);
+}
+
+/* Styles for success/error messages */
+#formMessage {
+  margin-top: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 8px;
+  display: none; /* Hide until we need it */
+}
+#formMessage.success {
+  background-color: #d4edda;
+  color: #155724;
+  display: block; /* Show the message */
+}
+#formMessage.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  display: block; /* Show the message */
+}
+
+/* =======================================
+  8. Password Toggle Icon
+   ======================================= */
+
+/* 1. Create a wrapper to hold the input and button */
+.input-wrapper {
+  position: relative;
+}
+
+/* 2. Style the password input to make space for the icon */
+.form-group input[type="password"] {
+  /* Add padding to the right to prevent text from overlapping the icon */
+  padding-right: 3.5rem; 
+}
+
+/* 3. Style the icon button */
+.password-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  
+  /* Reset button styles to be just an icon */
+  background: transparent;
+  border: none;
+  padding: 0 1.25rem; /* Make it easy to click */
+  margin: 0;
+  cursor: pointer;
+  color: #777; /* Icon color */
+}
+
+/* Override other button styles */
+button.password-toggle {
+  margin-top: 0;
+  background: transparent;
+  color: #777;
+}
+
+button.password-toggle:hover {
+  background: transparent;
+  color: var(--color-primary); /* Use theme color on hover */
+}
+
+/* =======================================
+  9. Map Page Styles
+   ======================================= */
+
+.map-container {
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+.map-container h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.map-container p {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+/* Style the search bar */
+.search-bar {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.search-bar input[type="text"] {
+  flex-grow: 1; /* Make the input take most of the space */
+  padding: 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: var(--font-main);
+}
+
+.search-bar button {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+.search-bar button:hover {
+   background-color: #004080;
+}
+
+/* Set the map's size */
+#map {
+  width: 100%;
+  height: 450px;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  margin-bottom: 2rem;
+}
+
+/* Style the result cards */
+.card.map-card {
+  cursor: pointer; /* Show that it's clickable */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card.map-card:hover {
+  /* We can reuse the hover styles from the project cards */
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+/* =======================================
+  10. Map Card Details (NEW)
+   ======================================= */
+
+/* Style the address paragraph */
+.map-card p.address {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.75rem;
+}
+
+/* Style the rating section */
+.map-card .rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+  color: #f39c12; /* Star color */
+  margin-bottom: 0.5rem;
+}
+
+.map-card .rating-number {
+  font-weight: 600;
+  color: #333; /* Dark text for the number */
+  margin-right: 0.25rem;
+}
+
+.map-card .rating-total {
+  color: #777; /* Muted color for total reviews */
+  margin-left: 0.25rem;
+}
+
+/* Style the Open/Closed status */
+.map-card .status {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.map-card .status.open {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.map-card .status.closed {
+  background-color: #f8d7da;
+  color: #721c24;
+}

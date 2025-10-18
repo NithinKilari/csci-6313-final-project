@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Location Explorer | Nithin Kilari</title>
+  <meta name="description" content="Explore locations using the Google Maps API." />
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Nithin Kilari | Data Analyst</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="form.html">Client Settings</a></li>
+          <li><a href="map.html">Location Explorer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="map-container">
+      <h2>Location Explorer</h2>
+      <p>Search for any place to see the top 5 results on the map.</p>
+      
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="e.g., Coffee shops in Oklahoma City">
+        <button id="searchButton"><i class="fas fa-search"></i></button>
+      </div>
+
+      <div id="map"></div>
+      
+      <h2>Search Results</h2>
+      <div id="resultsGrid" class="project-grid">
+        </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Nithin Kilari. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/map.js"></script>
+  
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKqkZFzOy1WDpbV1Oy7aOEq619bI99SnE&libraries=places&callback=initMap">
+  </script>
+</body>
+</html>
