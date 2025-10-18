@@ -45,6 +45,7 @@ This project meets all five requirements of the final exam.
 
 ### Part 01: Home page (desktop + mobile)
 ![Screenshot_18-10-2025_65122_](https://github.com/user-attachments/assets/4e7ee689-bca6-4b1e-8762-1d2c7c706563)
+<img width="1889" height="923" alt="image" src="https://github.com/user-attachments/assets/a8ebdb26-e3f7-47a8-a71e-cfc8f0567cd3" />
 
 
 ### Part 02: Form invalid + valid states
